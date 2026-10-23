@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>하얀 왕관궁 재현 · 조현진 포트폴리오</title>
+<title>원신 레벨 디자인 재해석 · 하얀 왕관궁 · 조현진 포트폴리오</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,16 +28,16 @@
     <img src="img/ue/u01_t15.jpg" alt="UE5로 재현한 하얀 왕관궁 설원 입구" style="object-position:50% 45%">
     <div class="cap"><div class="wrap">
       <a class="back" href="index.html#projects">← 전체 프로젝트</a>
-      <p class="eyebrow" style="color:#cfe6ff">UE5 · Personal Project · AI 활용</p>
-      <h1>하얀 왕관궁 재현</h1>
-      <p>원신 7.0 스네즈나야의 ‘하얀 왕관궁’ 탐사 영상을 보고, 맵 레이아웃과 퍼즐 흐름을 UE5 레벨로 다시 만들었습니다.</p>
+      <p class="eyebrow" style="color:#cfe6ff">Portfolio · 원신 맵 레벨 디자인 재구성</p>
+      <h1>원신 레벨 디자인 재해석<br>‘하얀 왕관궁’</h1>
+      <p>얼어붙은 왕좌의 성을 한 칸씩 다시 쌓았습니다. 원신 7.0 스네즈나야의 ‘하얀 왕관궁’을 레이아웃·동선·퍼즐 단위로 분해하고, Unreal Engine에서 플레이 가능한 레벨로 재구성했습니다.</p>
     </div></div>
   </section>
   <dl class="metastrip">
-    <div><dt>ENGINE</dt><dd>Unreal Engine 5</dd></div>
-    <div><dt>REFERENCE</dt><dd>원신 7.0 ‘하얀 왕관궁’</dd></div>
-    <div><dt>PLAY</dt><dd>전체 플레이 13분</dd></div>
-    <div><dt>ROLE</dt><dd>레이아웃 · 배치 · 기믹 설계</dd></div>
+    <div><dt>작업 일자</dt><dd>2026.10.03 – 10.23 (3주)</dd></div>
+    <div><dt>엔진</dt><dd>Unreal Engine 5</dd></div>
+    <div><dt>AI</dt><dd>Claude · Opus 5.5</dd></div>
+    <div><dt>제작 보조</dt><dd>Unreal MCP · Blender MCP</dd></div>
   </dl>
   <div class="wrap">
     <div class="case">
@@ -107,10 +107,18 @@
       </section>
 
       <section>
-        <p class="label">AI 활용</p>
+        <p class="label">AI 활용 · 제작 보조</p>
         <h2>설계는 직접, 구현은 AI에 지시하고 검수</h2>
+        <dl class="dl" style="margin-bottom:22px">
+          <div><dt>작업 일자</dt><dd>2026년 10월 3일 ~ 10월 23일 (3주)</dd></div>
+          <div><dt>작업 엔진</dt><dd>Unreal Engine 5</dd></div>
+          <div><dt>AI</dt><dd>Claude (Opus 5.5)</dd></div>
+          <div><dt>Unreal MCP</dt><dd>Claude가 언리얼 에디터에 직접 접속해 블루프린트 작성, 액터 배치, 머티리얼·라이트 설정을 수행</dd></div>
+          <div><dt>Blender MCP</dt><dd>레퍼런스 이미지를 보고 석상·샹들리에·서리고룡 등 블록아웃 메쉬를 Blender에서 모델링해 FBX로 언리얼에 반입</dd></div>
+          <div><dt>직접 한 일</dt><dd>원작 분석, 레이아웃과 동선, 액터 배치, 기믹 규칙과 수치, 플레이 테스트와 수정 지시</dd></div>
+        </dl>
         <div class="text">
-          <p>레이아웃, 배치, 기믹의 규칙과 수치는 직접 정했습니다. 블루프린트 구현과 블록아웃 메쉬 제작은 Claude Code에 Unreal·Blender MCP를 연결해 지시하고, 결과를 플레이해 보며 수정을 요청했습니다.</p>
+          <p>레이아웃, 배치, 기믹의 규칙과 수치는 직접 정했습니다. 블루프린트 구현과 블록아웃 메쉬 제작은 Claude(Opus 5.5)에 Unreal MCP와 Blender MCP를 연결해 제작 보조로 쓰면서 지시하고, 결과를 플레이해 보며 수정을 요청했습니다.</p>
           <p>예를 들어 승강기는 “올라가는 중에도 이동 가능하게”, 로프 앵커는 “우클릭 홀드 상태로 갖다 대면 UI, 좌클릭으로 이동”처럼 플레이 감각 단위로 요구 사항을 주고, 테스트 결과에 맞춰 수치를 직접 조정했습니다.</p>
         </div>
         <div class="figs">
