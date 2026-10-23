@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>번개의 길 · 조현진 포트폴리오</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;800;900&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>조현진</b><span>COMBAT · LEVEL DESIGNER</span></a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#other" class="hide-sm">그 외 업무</a>
+      <a href="index.html#videos" class="hide-sm">영상</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="case-hero">
+    <img src="img/gt/w16_puzzle.jpg" alt="번개의 길 전기 퍼즐">
+    <div class="cap"><div class="wrap">
+      <a class="back" href="index.html#projects">← 전체 프로젝트</a>
+      <p class="eyebrow">C · Puzzle Level Design · Live</p>
+      <h1>번개의 길 · 빛의 미궁</h1>
+      <p>메인 스토리 월드 16의 자석·전기 퍼즐 스테이지와, 도전 콘텐츠 ‘미궁’ 빛속성 42층입니다.</p>
+    </div></div>
+  </section>
+  <dl class="metastrip">
+    <div><dt>GAME</dt><dd>가디언 테일즈</dd></div>
+    <div><dt>CONTENT</dt><dd>메인 스토리 · 미궁</dd></div>
+    <div><dt>GIMMICK</dt><dd>테슬라 코일 · 철제 · 자석</dd></div>
+    <div><dt>ROLE</dt><dd>동선 · 퍼즐 · 난이도 설계</dd></div>
+  </dl>
+  <div class="wrap">
+    <div class="case-links">
+      <a class="btn btn-primary btn-sm" href="https://youtu.be/lLvoPTeWIsg?t=56" target="_blank" rel="noopener">번개의 길 ▶</a>
+      <a class="btn btn-ghost btn-sm" href="https://youtu.be/h5ONXRHFOeE" target="_blank" rel="noopener">빛속성 미궁 42층 ▶</a>
+    </div>
+    <div class="case">
+      <section>
+        <p class="label">APPROACH</p>
+        <h2>챕터 테마로 퍼즐 종류를 고른다</h2>
+        <div class="text"><p>메인 스토리는 전투·퍼즐·이벤트가 섞인 맵이고, 퍼즐을 풀면 추가 보상을 얻습니다. 챕터 전체 테마에 맞춰 퍼즐 종류를 고르고, 스테이지마다 기초 퍼즐을 둬서 계속 학습하게 했습니다. 월드 16은 전기를 내보내는 <b>테슬라 코일</b>, 전기가 통하는 <b>철제 오브젝트</b>, 자성을 띠는 <b>자석</b>으로 구성했습니다.</p></div>
+        <div class="steps" style="grid-template-columns:repeat(3,1fr)">
+          <div><span class="n">1</span><b>퍼즐 컨셉 아이데이션</b><p>2가지 이상 기믹을 교차해 새 구조를 만들고 ‘기초 컨셉’과 ‘목표’를 정합니다.</p></div>
+          <div><span class="n">2</span><b>흐름과 세부 기획</b><p>정보를 단계적으로 보여 주고, 풀이 미션을 작은 단위로 쪼개 푸는 재미를 줍니다.</p></div>
+          <div><span class="n">3</span><b>난이도 레벨 디자인</b><p>코어 기믹으로 난이도를 나눠 [규칙 분석] → [기믹 응용] → [심화 풀이]로 유도합니다.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <p class="label">ROUTE</p>
+        <h2>메인 동선은 짧게, 퍼즐은 서브 경로에</h2>
+        <div class="two">
+          <div class="text">
+            <p>퍼즐은 서브 경로에서 추가 보상을 얻는 구조라, 서브 경로를 도는 유저의 피로도를 낮추는 것이 핵심이었습니다.</p>
+            <p>최소 전투만으로 깰 수 있는 메인 동선을 먼저 잡고, 서브 경로 입구에 튜토리얼 퍼즐을 둬서 유도했습니다. 퍼즐 공간은 백트래킹이 적은 ‘ㅁ’자 동선으로 묶었습니다.</p>
+          </div>
+          <figure><img src="img/gt/w16_map.jpg" alt="월드 16 번개의 길 맵 레이아웃" loading="lazy" data-zoom style="max-height:460px;object-fit:contain;background:var(--surface)"><figcaption>번개의 길 레이아웃 · 메인 동선과 퍼즐 공간</figcaption></figure>
+        </div>
+      </section>
+
+      <section>
+        <p class="label">PUZZLES</p>
+        <h2>튜토리얼 → 기본 → 휴식 → 심화</h2>
+        <dl class="dl">
+          <div><dt>1 · 튜토리얼<br>자석 &amp; 소코반</dt><dd>반드시 지나가는 경로에, 살짝만 건드려도 주변과 반응하는 퍼즐 오브젝트를 배치. 간단한 소코반을 섞어 자석의 특성을 익히게 했습니다. 입구 주변에 보상을 두고, 직전 전투에서는 닿을 수 없는 2층을 보여 줘 서브 루트가 있다는 걸 알렸습니다.</dd></div>
+          <div><dt>2 · 기본 퍼즐<br>자석</dt><dd>1층 자석으로 닿을 수 없는 2층 스위치를 누르는 기믹. 상호작용할 수 있는 건 ‘도넛 자석’ 하나라, 들기만 해도 주변 기믹이 반응해 규칙이 읽힙니다. 함정으로, 철제 오브젝트는 유저뿐 아니라 주변 자석에도 끌려가서 순서를 지키지 않으면 실패합니다.</dd></div>
+          <div><dt>3 · 휴식<br>길 찾기</dt><dd>전투와 퍼즐 사이 환기 구간. 미니맵에 탐색되지 않은 공간과 항아리 화살표로 숨겨진 길을 찾게 하고, 보상을 줬습니다.</dd></div>
+          <div><dt>4 · 심화 퍼즐<br>거대 자석</dt><dd>중앙의 거대 자석이 모든 자성 오브젝트를 끌어당기는 성질을 응용해 맵 곳곳의 스위치를 누릅니다. 한 번에 풀 수 없고, 구간별로 나눠 오브젝트를 배치해야 풀리도록 설계했습니다.</dd></div>
+        </dl>
+        <div class="figs">
+          <figure><img src="img/gt/w16_tut.jpg" alt="튜토리얼 퍼즐 설계도" loading="lazy" data-zoom style="object-fit:contain;background:var(--surface)"><figcaption>튜토리얼 퍼즐 설계도</figcaption></figure>
+          <figure><img src="img/gt/w16_puzzle.jpg" alt="전기 연결 퍼즐 인게임" loading="lazy" data-zoom><figcaption>기본 퍼즐 · 전기 연결</figcaption></figure>
+          <figure><img src="img/gt/w16_big.jpg" alt="거대 자석 심화 퍼즐" loading="lazy" data-zoom><figcaption>심화 퍼즐 · 거대 자석</figcaption></figure>
+        </div>
+      </section>
+
+      <section>
+        <p class="label">미궁 · 빛속성 42층</p>
+        <h2>정상적으로는 못 깨는 20초 타임어택</h2>
+        <div class="two">
+          <div class="text">
+            <p>‘미궁’은 기본 전투 시스템에 특수 기믹을 더한 전투·퍼즐 도전 콘텐츠입니다. 42층은 20초 안에 목적지에 도착해야 하는데, 그냥 달리면 시간이 모자랍니다.</p>
+            <p>부술 수 있는 항아리에 시간 확보 기믹을 넣었습니다. 반드시 지나가는 길에 항아리를 둬서 [항아리 파괴 → 시간 확보]를 먼저 익히게 하고, 메인 경로를 벗어난 곳이나 위험한 장애물 사이에 항아리를 놓아 난이도를 조절했습니다.</p>
+            <p>입장 조건은 <b>캐릭터 1인</b>, <b>빛속성만</b>입니다. 같은 시기에 출시된 신규 캐릭터 ‘가브리엘’을 타겟으로, 오브젝트를 관통하는 공격과 범위 공격·회복 스킬을 쓰면 난이도가 크게 내려가도록 설계했습니다.</p>
+          </div>
+          <div style="display:grid;gap:14px">
+            <figure><img src="img/gt/lab_map.jpg" alt="빛의 미궁 42층 청사진" loading="lazy" data-zoom><figcaption>스테이지 청사진 · 시작 → 종료</figcaption></figure>
+            <figure><img src="img/gt/lab_play.jpg" alt="빛의 미궁 42층 플레이" loading="lazy" data-zoom><figcaption>항아리를 부숴 시간을 확보</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p class="label">ORIGINAL SLIDES</p>
+        <h2>원본 기획 슬라이드</h2>
+        <div class="slides">
+<button type="button" data-full="img/slides/s28.jpg"><img src="img/slides/t/s28.jpg" alt="슬라이드 28 · C 메인 스토리 퍼즐" loading="lazy"><span>p.28 메인 스토리 퍼즐</span></button>
+<button type="button" data-full="img/slides/s29.jpg"><img src="img/slides/t/s29.jpg" alt="슬라이드 29 · C 퍼즐 기획 프로세스" loading="lazy"><span>p.29 퍼즐 기획 프로세스</span></button>
+<button type="button" data-full="img/slides/s30.jpg"><img src="img/slides/t/s30.jpg" alt="슬라이드 30 · C 번개의 길 동선" loading="lazy"><span>p.30 번개의 길 동선</span></button>
+<button type="button" data-full="img/slides/s31.jpg"><img src="img/slides/t/s31.jpg" alt="슬라이드 31 · C 튜토리얼 퍼즐" loading="lazy"><span>p.31 튜토리얼 퍼즐</span></button>
+<button type="button" data-full="img/slides/s32.jpg"><img src="img/slides/t/s32.jpg" alt="슬라이드 32 · C 기본 퍼즐 자석" loading="lazy"><span>p.32 기본 퍼즐 자석</span></button>
+<button type="button" data-full="img/slides/s33.jpg"><img src="img/slides/t/s33.jpg" alt="슬라이드 33 · C 휴식 구간" loading="lazy"><span>p.33 휴식 구간</span></button>
+<button type="button" data-full="img/slides/s34.jpg"><img src="img/slides/t/s34.jpg" alt="슬라이드 34 · C 심화 퍼즐 거대 자석" loading="lazy"><span>p.34 심화 퍼즐 거대 자석</span></button>
+<button type="button" data-full="img/slides/s35.jpg"><img src="img/slides/t/s35.jpg" alt="슬라이드 35 · C 미궁 42층 청사진" loading="lazy"><span>p.35 미궁 42층 청사진</span></button>
+<button type="button" data-full="img/slides/s36.jpg"><img src="img/slides/t/s36.jpg" alt="슬라이드 36 · C 미궁 42층 입장 조건" loading="lazy"><span>p.36 미궁 42층 입장 조건</span></button>
+</div>
+      </section>
+    </div>
+    <nav class="pager" aria-label="프로젝트 이동">
+      <a href="expedition.html"><small>PREV</small>← 협동원정대 스테이지</a>
+      <a href="white-crown.html" style="text-align:right"><small>NEXT</small>하얀 왕관궁 재현 →</a>
+    </nav>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <h2>함께 일할 기회를 기다립니다</h2>
+    <div class="contact">
+      <div><span>mikuku01@gmail.com</span><button type="button" data-copy="mikuku01@gmail.com">복사</button></div>
+      <div><span>010-9094-1619</span><button type="button" data-copy="010-9094-1619">복사</button></div>
+    </div>
+    <small>© 2026 조현진 · 게임 화면의 저작권은 각 게임사에 있습니다.</small>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
