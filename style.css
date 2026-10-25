@@ -434,3 +434,6 @@ body { background-image: linear-gradient(var(--grid) 1px, transparent 1px), line
   .banner-sheet .wrap { padding-block: 220px 48px; }
   .banner-sheet .corner { display: none; }
 }
+
+.tool-grp { font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+.tools + .tool-grp { margin-top: -14px; }
