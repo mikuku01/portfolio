@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="style.css?v=20261025c">
+<link rel="stylesheet" href="style.css?v=20261025d">
 </head>
 <body>
 <a class="skip" href="#main">본문 바로가기</a>
@@ -36,8 +36,8 @@
   <dl class="metastrip">
     <div><dt>작업 일자</dt><dd>2026.10.03 – 10.23 (3주)</dd></div>
     <div><dt>엔진</dt><dd>Unreal Engine 5</dd></div>
-    <div><dt>AI</dt><dd>Claude · Opus 5.5</dd></div>
-    <div><dt>제작 보조</dt><dd>Unreal MCP · Blender MCP</dd></div>
+    <div><dt>역할</dt><dd>총괄 기획 · 레벨 설계 · 검수</dd></div>
+    <div><dt>구현 디렉팅</dt><dd>Claude Opus 5.5 · Unreal / Blender MCP</dd></div>
   </dl>
   <div class="wrap">
     <div class="case">
@@ -107,19 +107,19 @@
       </section>
 
       <section>
-        <p class="label">AI 활용 · 제작 보조</p>
-        <h2>설계는 직접, 구현은 AI에 지시하고 검수</h2>
+        <p class="label">총괄 기획 · AI 디렉팅</p>
+        <h2>기획은 직접 총괄하고, 구현은 AI를 디렉팅해 검수했습니다</h2>
         <dl class="dl" style="margin-bottom:22px">
           <div><dt>작업 일자</dt><dd>2026년 10월 3일 ~ 10월 23일 (3주)</dd></div>
           <div><dt>작업 엔진</dt><dd>Unreal Engine 5</dd></div>
           <div><dt>AI</dt><dd>Claude (Opus 5.5)</dd></div>
           <div><dt>Unreal MCP</dt><dd>Claude가 언리얼 에디터에 직접 접속해 블루프린트 작성, 액터 배치, 머티리얼·라이트 설정을 수행</dd></div>
           <div><dt>Blender MCP</dt><dd>레퍼런스 이미지를 보고 석상·샹들리에·서리고룡 등 블록아웃 메쉬를 Blender에서 모델링해 FBX로 언리얼에 반입</dd></div>
-          <div><dt>직접 한 일</dt><dd>원작 분석, 레이아웃과 동선, 액터 배치, 기믹 규칙과 수치, 플레이 테스트와 수정 지시</dd></div>
+          <div><dt>총괄 기획 (직접)</dt><dd>원작 분석, 레벨 콘셉트와 동선, 액터 배치, 기믹 규칙과 수치, 연출 흐름, 플레이 테스트와 최종 판단</dd></div>
         </dl>
         <div class="text">
-          <p>레이아웃, 배치, 기믹의 규칙과 수치는 직접 정했습니다. 블루프린트 구현과 블록아웃 메쉬 제작은 Claude(Opus 5.5)에 Unreal MCP와 Blender MCP를 연결해 제작 보조로 쓰면서 지시하고, 결과를 플레이해 보며 수정을 요청했습니다.</p>
-          <p>예를 들어 승강기는 “올라가는 중에도 이동 가능하게”, 로프 앵커는 “우클릭 홀드 상태로 갖다 대면 UI, 좌클릭으로 이동”처럼 플레이 감각 단위로 요구 사항을 주고, 테스트 결과에 맞춰 수치를 직접 조정했습니다.</p>
+          <p>이 레벨의 방향과 규칙은 모두 제가 정했습니다. 어떤 방에서 무엇을 가르치고, 어떤 기믹으로 다음 공간을 열지, 어느 순간에 컷씬을 넣을지까지 기획한 뒤, 블루프린트와 블록아웃 메쉬 구현을 Claude(Opus 5.5)에 Unreal MCP·Blender MCP로 디렉팅했습니다.</p>
+          <p>요구 사항은 “올라가는 중에도 이동 가능하게”(승강기), “우클릭 홀드로 조준하면 UI, 좌클릭으로 이동”(로프 앵커)처럼 플레이 감각 단위로 전달했습니다. 결과는 매번 직접 플레이해 검수하고, 손맛이 맞을 때까지 수치를 조정했습니다. 기획자 한 명이 3주 만에 13분짜리 레벨을 끝까지 완성할 수 있었던 방식입니다.</p>
         </div>
         <div class="figs">
           <figure><img src="img/ue/u12_t555.jpg" alt="빛나는 바닥 기믹 방" loading="lazy" data-zoom><figcaption>빛 타일 바닥 구간</figcaption></figure>
@@ -144,6 +144,6 @@
     <small>© 2026 조현진 · 게임 화면의 저작권은 각 게임사에 있습니다.</small>
   </div>
 </footer>
-<script src="app.js?v=20261025c"></script>
+<script src="app.js?v=20261025d"></script>
 </body>
 </html>

@@ -405,3 +405,32 @@ body { background-image: linear-gradient(var(--grid) 1px, transparent 1px), line
   .g-thumbs { grid-template-columns: repeat(4, 1fr); }
   .g-thumbs .g-thumb:nth-child(n+5) { display: none; }
 }
+
+/* big banner version of the intro sheet */
+.banner-sheet { position: relative; min-height: min(90vh, 820px); display: flex; align-items: flex-end; overflow: hidden; background: #0b1017; color: var(--on-media); }
+.banner-sheet .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; border-radius: 0; }
+.banner-sheet::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,12,20,.86) 0%, rgba(8,12,20,.6) 38%, rgba(8,12,20,.08) 72%), linear-gradient(0deg, rgba(8,12,20,.55) 0%, transparent 40%); }
+.banner-sheet .wrap { position: relative; z-index: 2; width: 100%; padding-block: 120px 64px; }
+.banner-sheet .sheet-text { max-width: 560px; }
+.banner-sheet .code { color: rgba(255,255,255,.72); }
+.banner-sheet h1 { font-size: clamp(52px, 8vw, 96px); font-weight: 700; letter-spacing: -.04em; line-height: 1.02; margin: 4px 0 16px; }
+.banner-sheet .statement { color: #fff; font-size: clamp(19px, 2.4vw, 26px); font-weight: 600; line-height: 1.5; margin: 0 0 26px; }
+.banner-sheet .spec-list { border-top-color: rgba(255,255,255,.22); }
+.banner-sheet .spec-list div { border-bottom-color: rgba(255,255,255,.22); }
+.banner-sheet .spec-list dt { color: rgba(255,255,255,.6); }
+.banner-sheet .spec-list dd { color: #fff; }
+.banner-sheet .btn-ghost { color: #fff; }
+.banner-sheet .corner { z-index: 2; width: 22px; height: 22px; }
+.banner-sheet .corner.tl { top: 20px; left: 20px; }
+.banner-sheet .corner.tr { top: 20px; right: 20px; }
+.banner-sheet .corner.bl { bottom: 20px; left: 20px; }
+.banner-sheet .corner.br { bottom: 20px; right: 20px; }
+.banner-cap { position: absolute; z-index: 2; right: 52px; bottom: 26px; margin: 0; display: flex; gap: 14px; font-family: var(--f-mono); font-size: 11.5px; color: rgba(255,255,255,.65); }
+@media (max-width: 900px) {
+  .banner-sheet::after { background: linear-gradient(0deg, rgba(8,12,20,.92) 0%, rgba(8,12,20,.7) 55%, rgba(8,12,20,.25) 100%); }
+  .banner-cap { display: none; }
+}
+@media (max-width: 640px) {
+  .banner-sheet .wrap { padding-block: 220px 48px; }
+  .banner-sheet .corner { display: none; }
+}
