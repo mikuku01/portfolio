@@ -100,3 +100,19 @@
     } else if (vid) { playVideo(); }
   });
 })();
+
+// Banner caption follows whichever scene the mixed banner clip is showing.
+(function () {
+  var cap = document.querySelector('.banner-cap[data-caps]');
+  var v = document.querySelector('.banner-sheet .hero-video');
+  if (!cap || !v) return;
+  var now = cap.querySelector('.cap-now');
+  var caps = cap.getAttribute('data-caps').split('|').map(function (s) {
+    var i = s.indexOf(':'); return { t: parseFloat(s.slice(0, i)), label: s.slice(i + 1) };
+  });
+  v.addEventListener('timeupdate', function () {
+    var label = caps[0].label;
+    caps.forEach(function (c) { if (v.currentTime >= c.t) label = c.label; });
+    if (now.textContent !== label) now.textContent = label;
+  });
+})();
