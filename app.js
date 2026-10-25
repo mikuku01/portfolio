@@ -63,3 +63,11 @@
     var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
   }
 })();
+
+// Keep the cutscene banner still for viewers who ask for reduced motion.
+(function () {
+  var v = document.querySelector('video.hero-video');
+  if (v && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    v.removeAttribute('autoplay'); v.pause();
+  }
+})();

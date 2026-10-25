@@ -298,3 +298,7 @@ figcaption { font-size: 13.5px; color: var(--muted); margin-top: 8px; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* cutscene banner on the UE5 page */
+.case-hero video.hero-video { display: block; width: 100%; height: min(64vh, 600px); object-fit: cover; }
+@media (max-width: 640px) { .case-hero video.hero-video { height: 440px; } }
