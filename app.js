@@ -69,3 +69,34 @@
   if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
   document.querySelectorAll('video.hero-video').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); });
 })();
+
+// Project galleries: thumbnails swap the main image; the video thumb plays the muted clip.
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-gallery]').forEach(function (g) {
+    var img = g.querySelector('.g-img'), vid = g.querySelector('.g-video');
+    var thumbs = Array.prototype.slice.call(g.querySelectorAll('.g-thumb'));
+    function playVideo() {
+      if (!vid) return;
+      if (!vid.src) vid.src = vid.getAttribute('data-src');
+      vid.hidden = false; img.hidden = true;
+      if (!reduce) { var p = vid.play(); if (p && p.catch) p.catch(function () {}); }
+    }
+    thumbs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        thumbs.forEach(function (o) { o.setAttribute('aria-pressed', o === t ? 'true' : 'false'); });
+        if (t.getAttribute('data-type') === 'video') { playVideo(); return; }
+        if (vid) { vid.pause(); vid.hidden = true; }
+        img.src = t.getAttribute('data-src'); img.alt = t.getAttribute('aria-label') || ''; img.hidden = false;
+      });
+    });
+    if (vid && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (vid.hidden) return;
+          if (e.isIntersecting) playVideo(); else vid.pause();
+        });
+      }, { threshold: .35 }).observe(g);
+    } else if (vid) { playVideo(); }
+  });
+})();

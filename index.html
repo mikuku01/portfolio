@@ -3,24 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>조현진 포트폴리오</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="전투·레벨 디자이너 조현진 포트폴리오 — 가디언 테일즈 보스·스테이지 기획, UE5 개인 레벨">
+<title>조현진 | Combat · Level Designer</title>
+<meta name="description" content="전투·레벨 디자이너 조현진 포트폴리오 — 가디언 테일즈 보스·스테이지 기획, 원신 레벨 디자인 재해석(UE5)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;800;900&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="style.css?v=20261025">
+<link rel="stylesheet" href="style.css?v=20261025b">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">본문 바로가기</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#top"><b>조현진</b><span>COMBAT · LEVEL DESIGNER</span></a>
+    <a class="brand" href="#top"><b>조현진</b><span>LEVEL DESIGNER</span></a>
     <nav class="nav" aria-label="주요 메뉴">
       <a href="#projects">Projects</a>
-      <a href="#other" class="hide-sm">그 외 업무</a>
       <a href="#videos" class="hide-sm">영상</a>
       <a href="#about">About</a>
+      <a class="btn btn-primary btn-xs" href="docs/portfolio.pdf" target="_blank" rel="noopener">PDF ↗</a>
     </nav>
   </div>
 </header>
@@ -29,295 +28,200 @@
   <section class="hero" id="top">
     <video class="bg hero-video" src="media/banner.mp4" poster="media/banner.jpg" autoplay muted loop playsinline preload="auto" aria-label="하얀 왕관궁 컷씬: 석상 퍼즐 해제, 대성당 샹들리에, 서리고룡 등장"></video>
     <div class="wrap">
-      <p class="eyebrow">조현진 · Combat / Level Designer</p>
-      <h1>패턴으로 가르치는<br>전투·레벨 디자이너</h1>
-      <p class="lead">보스·협동 던전·퍼즐 스테이지를 컨셉부터 밸런싱까지 기획하고 배치합니다.</p>
-      <div class="stats">
-        <div class="stat"><b>가디언 테일즈 3년 11개월</b><span>보스 · 스테이지 · 퍼즐 레벨 디자인</span></div>
-        <div class="stat"><b>AU 참여율 20% → 45%</b><span>협동원정대 시즌3 총괄 기획</span></div>
-        <div class="stat"><b>UE5 개인 레벨</b><span>원신 레벨 디자인 재해석 · 하얀 왕관궁</span></div>
-      </div>
-      <div class="actions">
-        <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
-        <a class="btn btn-ghost" href="https://youtu.be/47w3uX0MQdg" target="_blank" rel="noopener">알베리히 보스 영상 ▶</a>
-        <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=Q-UDqbOAlcU" target="_blank" rel="noopener">선별자 흑선 보스 영상 ▶</a>
-        <a class="btn btn-ghost" href="white-crown.html#video">하얀 왕관궁 영상 ▶</a>
-      </div>
-    </div>
-    <span class="credit">원신 레벨 디자인 재해석 · 하얀 왕관궁 컷씬</span>
-  </section>
-
-  <section class="block" id="approach">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>일하는 방식</h2>
-        <p>보스와 스테이지 모두 “무엇을 가르칠지”를 먼저 정하고, 학습에서 응용으로 이어지게 배치합니다.</p>
-      </div>
-      <div class="strengths">
-        <div class="strength">
-          <div class="num">BOSS DESIGN</div>
-          <h3>외형·패턴·연출을 한 이야기로</h3>
-          <ol>
-            <li>내러티브를 키워드로 바꿔 포인트 컨셉을 잡습니다.</li>
-            <li>기믹·패턴으로 전투 컨셉을 세운 뒤 학습 → 심화로 레벨을 짭니다.</li>
-            <li>탑뷰에서도 카메라 이동과 효과로 연출을 살립니다.</li>
-          </ol>
-        </div>
-        <div class="strength">
-          <div class="num">STAGE DESIGN</div>
-          <h3>경험 흐름으로 짜는 레이아웃</h3>
-          <ol>
-            <li>스테이지의 코어 경험을 정하고 ‘방’ 단위로 공간 컨셉을 나눕니다.</li>
-            <li>오브젝트를 시간·공간에 나눠 놓아 동선을 만듭니다.</li>
-            <li>직관적인 기믹과 퍼즐로 말없이 규칙을 전달합니다.</li>
-          </ol>
-        </div>
-        <div class="strength">
-          <div class="num">BALANCE &amp; TOOLS</div>
-          <h3>수치와 툴까지 직접</h3>
-          <ol>
-            <li>유저 스펙을 상·중·하로 나눠 적정 전투 시간을 맞춥니다.</li>
-            <li>Unity Graph 툴로 클라이언트 도움 없이 몬스터 액션을 설계합니다.</li>
-            <li>UE5 개인 레벨에서는 AI 코딩 도구로 기믹을 구현해 봤습니다.</li>
-          </ol>
-        </div>
-      </div>
+      <h1><em>패턴</em>으로 가르치고,<br><em>레벨</em>로 보여준다</h1>
+      <p class="who">전투·레벨 디자이너 조현진</p>
+      <a class="btn btn-primary" href="#projects">대표 작업 보기 ↓</a>
+      <p class="tagline">가디언 테일즈 3년 11개월 · 협동 던전 AU 20% → 45% · UE5 개인 레벨</p>
     </div>
   </section>
 
   <section class="block" id="projects">
     <div class="wrap">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p>가디언 테일즈 라이브 작업 4건과 UE5 개인 레벨 1건입니다. 각 항목의 ‘자세히 보기’에서 원본 기획 슬라이드를 함께 볼 수 있습니다.</p>
-      </div>
+      <h2 class="h-sec">Projects</h2>
 
-      <article class="project">
-        <a class="media" href="alberich.html"><img src="img/gt/alb_final.jpg" alt="완전체 알베리히 필살 패턴" loading="lazy"><span class="tag">월드 19 · 메인 스토리</span></a>
-        <div class="body">
-          <div class="chips"><span class="chip boss">BOSS</span><span class="chip live">LIVE</span></div>
-          <h3><a href="alberich.html">알베리히</a></h3>
-          <p class="sub">가디언 테일즈 메인 스토리 보스 · 컨셉 · 패턴 · 연출 · 밸런싱</p>
-          <p class="desc">사악한 요정 마법사가 누에나방으로 변이한다는 설정을, 페이즈마다 요정 → 고치 → 성충 → 완전체로 진화하는 전투로 만들었습니다.</p>
-          <ul class="points">
-            <li>시즌 목표인 4인 파티 롤플레잉 메타에 맞춰 메타 캐릭터 ‘은하’와 기본 캐릭터 ‘기사’를 타겟</li>
-            <li>인분 AOE를 바람 투사체로 상쇄하는 핵심 기믹, 방치하면 터지는 패널티 패턴</li>
-            <li>1페이즈에서 배운 기믹을 2페이즈 필살 패턴 미션으로 응용</li>
-          </ul>
-          <div class="links">
-            <a class="btn btn-primary btn-sm" href="alberich.html">자세히 보기</a>
-            <a class="btn btn-ghost btn-sm" href="https://youtu.be/47w3uX0MQdg" target="_blank" rel="noopener">영상 ▶</a>
+      <article class="pcard">
+        <header class="phead">
+          <div>
+            <span class="k">UE5 개인 레벨 · AI 제작 보조</span>
+            <h3><a href="white-crown.html">원신 레벨 디자인 재해석 ‘하얀 왕관궁’</a></h3>
+            <p>얼음 성의 레이아웃과 퍼즐을 UE5로 재구성한 13분 레벨</p>
+          </div>
+          <div class="pbtns">
+            <a class="btn btn-primary" href="white-crown.html">자세히 보기 →</a>
+            <a class="btn btn-ghost" href="white-crown.html#video">하이라이트 ▶</a>
+          </div>
+        </header>
+        <div class="gallery" data-gallery>
+          <div class="g-main">
+            <video class="g-video" muted loop playsinline preload="none" poster="img/ue/u17_t765.jpg" data-src="media/banner.mp4" aria-label="하얀 왕관궁 컷씬"></video>
+            <img class="g-img" alt="" hidden>
+          </div>
+          <div class="g-thumbs">
+            <button type="button" class="g-thumb" data-type="video" aria-pressed="true" aria-label="컷씬 영상"><img src="img/ue/u17_t765.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true">▶</span></button>
+            <button type="button" class="g-thumb" data-src="img/ue/u08_t375.jpg" aria-pressed="false" aria-label="대성당 내부"><img src="img/ue/u08_t375.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/ue/u02_t75.jpg" aria-pressed="false" aria-label="입구 광장 석상"><img src="img/ue/u02_t75.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/ue/u05_t165.jpg" aria-pressed="false" aria-label="얼음 물길 방"><img src="img/ue/u05_t165.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/ue/u14_t645.jpg" aria-pressed="false" aria-label="승강기"><img src="img/ue/u14_t645.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/ue/u16_t735.jpg" aria-pressed="false" aria-label="서리고룡 보스전"><img src="img/ue/u16_t735.jpg" alt="" loading="lazy"></button>
           </div>
         </div>
       </article>
 
-      <article class="project">
-        <a class="media" href="heukseon.html"><img src="img/gt/hs_cover.jpg" alt="선별자 흑선 키 아트" loading="lazy"><span class="tag">협동원정대 시즌3</span></a>
-        <div class="body">
-          <div class="chips"><span class="chip boss">BOSS</span><span class="chip">4인 CO-OP</span><span class="chip live">LIVE</span></div>
-          <h3><a href="heukseon.html">선별자 흑선</a></h3>
-          <p class="sub">4인 멀티 PVE 던전 ‘협동원정대’ 최종 보스</p>
-          <p class="desc">딜러·탱커·힐러가 각자 할 일을 갖는 롤플레잉 전투입니다. 소통이 어려운 모바일 Co-op이라, 말없이도 역할이 읽히도록 패턴을 짰습니다.</p>
-          <ul class="points">
-            <li>탱커는 방패로 투사체를, 힐러는 누적 디버프를 맡는 [역할 미션]</li>
-            <li>보스의 ‘세 개의 눈’을 기믹 심볼로 써서 패턴 이해도를 높임</li>
-            <li>가짜 봉인석을 함께 부숴 세이브 존을 만드는 2페이즈 [협동 미션]</li>
-          </ul>
-          <div class="links">
-            <a class="btn btn-primary btn-sm" href="heukseon.html">자세히 보기</a>
-            <a class="btn btn-ghost btn-sm" href="https://www.youtube.com/watch?v=Q-UDqbOAlcU" target="_blank" rel="noopener">영상 ▶</a>
+      <article class="pcard">
+        <header class="phead">
+          <div>
+            <span class="k">LIVE · 메인 스토리 보스</span>
+            <h3><a href="alberich.html">알베리히</a></h3>
+            <p>요정 → 고치 → 나방으로 진화하는 페이즈형 보스</p>
+          </div>
+          <div class="pbtns">
+            <a class="btn btn-primary" href="alberich.html">자세히 보기 →</a>
+            <a class="btn btn-ghost" href="https://youtu.be/47w3uX0MQdg" target="_blank" rel="noopener">영상 ▶</a>
+          </div>
+        </header>
+        <div class="gallery" data-gallery>
+          <div class="g-main"><img class="g-img" src="img/gt/alb_cover.jpg" alt="알베리히 보스 전투"></div>
+          <div class="g-thumbs">
+            <button type="button" class="g-thumb" data-src="img/gt/alb_cover.jpg" aria-pressed="true" aria-label="보스 전투"><img src="img/gt/alb_cover.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/alb_evolve.jpg" aria-pressed="false" aria-label="우화 연출"><img src="img/gt/alb_evolve.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/alb_aoe.jpg" aria-pressed="false" aria-label="AOE 패턴"><img src="img/gt/alb_aoe.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/alb_mission.jpg" aria-pressed="false" aria-label="파훼 패턴"><img src="img/gt/alb_mission.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/alb_final.jpg" aria-pressed="false" aria-label="완전체 필살 패턴"><img src="img/gt/alb_final.jpg" alt="" loading="lazy"></button>
           </div>
         </div>
       </article>
 
-      <article class="project">
-        <a class="media" href="expedition.html"><img src="img/gt/coop_laser.jpg" alt="협동원정대 스테이지 레이저 기믹 전투" loading="lazy"><span class="tag">시즌 3.5 · 이름 없는 자</span></a>
-        <div class="body">
-          <div class="chips"><span class="chip stage">STAGE</span><span class="chip">4인 CO-OP</span><span class="chip live">LIVE</span></div>
-          <h3><a href="expedition.html">협동원정대 스테이지</a></h3>
-          <p class="sub">가디언 테일즈 최종 콘텐츠 · 전 시즌 작업, 시즌3 총괄 기획</p>
-          <p class="desc">스테이지, 기믹, 몬스터, 보스를 총괄한 시즌에 AU 참여율을 20%에서 45%로 올렸고, 공략 영상과 커뮤니티 반응도 늘었습니다.</p>
-          <ul class="points">
-            <li>방마다 다른 기믹 전투로 반복 플레이 피로도를 낮춤</li>
-            <li>50% 랜덤 분기로 A(자폭 몬스터) · B(특수 보호막) 루트를 나눠 매 판 다른 전투</li>
-            <li>흩어졌다 다시 모이는 3단계 미션으로 협동의 기본기를 가르침</li>
-          </ul>
-          <div class="links">
-            <a class="btn btn-primary btn-sm" href="expedition.html">자세히 보기</a>
-            <a class="btn btn-ghost btn-sm" href="https://youtu.be/2lgkiuSEzpI" target="_blank" rel="noopener">A 루트 ▶</a>
-            <a class="btn btn-ghost btn-sm" href="https://youtu.be/2lgkiuSEzpI?t=149" target="_blank" rel="noopener">B 루트 ▶</a>
+      <article class="pcard">
+        <header class="phead">
+          <div>
+            <span class="k">LIVE · 4인 협동 PVE 보스</span>
+            <h3><a href="heukseon.html">선별자 흑선</a></h3>
+            <p>딜러·탱커·힐러에게 각자 미션을 주는 협동원정대 최종 보스</p>
+          </div>
+          <div class="pbtns">
+            <a class="btn btn-primary" href="heukseon.html">자세히 보기 →</a>
+            <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=Q-UDqbOAlcU" target="_blank" rel="noopener">영상 ▶</a>
+          </div>
+        </header>
+        <div class="gallery" data-gallery>
+          <div class="g-main"><img class="g-img" src="img/gt/hs_cover.jpg" alt="선별자 흑선 키 아트"></div>
+          <div class="g-thumbs">
+            <button type="button" class="g-thumb" data-src="img/gt/hs_cover.jpg" aria-pressed="true" aria-label="키 아트"><img src="img/gt/hs_cover.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/hs_a.jpg" aria-pressed="false" aria-label="역할 미션"><img src="img/gt/hs_a.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/hs_b.jpg" aria-pressed="false" aria-label="개인 미션"><img src="img/gt/hs_b.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/slides/s15.jpg" aria-pressed="false" aria-label="필살 패턴 설계"><img src="img/slides/t/s15.jpg" alt="" loading="lazy"></button>
           </div>
         </div>
       </article>
 
-      <article class="project">
-        <a class="media" href="puzzle.html"><img src="img/gt/w16_puzzle.jpg" alt="월드 16 번개의 길 전기 퍼즐" loading="lazy"><span class="tag">월드 16 · 번개의 길</span></a>
-        <div class="body">
-          <div class="chips"><span class="chip stage">PUZZLE</span><span class="chip live">LIVE</span></div>
-          <h3><a href="puzzle.html">번개의 길 · 빛의 미궁</a></h3>
-          <p class="sub">메인 스토리 퍼즐 스테이지 · 도전 콘텐츠 ‘미궁’ 42층</p>
-          <p class="desc">자석·전기·철제 오브젝트를 엮어 튜토리얼 → 기본 → 휴식 → 심화 순서로 퍼즐을 배치했습니다. 메인 동선은 최소 전투로, 퍼즐은 서브 경로의 추가 보상으로 뒀습니다.</p>
-          <ul class="points">
-            <li>백트래킹을 줄인 ‘ㅁ’자 동선, 서브 경로 입구에 튜토리얼 퍼즐</li>
-            <li>철제 오브젝트가 주변 자석에도 끌려가는 함정으로 순서를 고민하게 함</li>
-            <li>미궁 42층: 20초 타임어택을 항아리 파괴로 시간을 버는 구조로 설계</li>
-          </ul>
-          <div class="links">
-            <a class="btn btn-primary btn-sm" href="puzzle.html">자세히 보기</a>
-            <a class="btn btn-ghost btn-sm" href="https://youtu.be/lLvoPTeWIsg?t=56" target="_blank" rel="noopener">번개의 길 ▶</a>
-            <a class="btn btn-ghost btn-sm" href="https://youtu.be/h5ONXRHFOeE" target="_blank" rel="noopener">미궁 42층 ▶</a>
+      <article class="pcard">
+        <header class="phead">
+          <div>
+            <span class="k">LIVE · 4인 협동 PVE 스테이지</span>
+            <h3><a href="expedition.html">협동원정대 스테이지</a></h3>
+            <p>50% 랜덤 분기로 매 판 다른 루트, AU 참여율 20% → 45%</p>
+          </div>
+          <div class="pbtns">
+            <a class="btn btn-primary" href="expedition.html">자세히 보기 →</a>
+            <a class="btn btn-ghost" href="https://youtu.be/2lgkiuSEzpI" target="_blank" rel="noopener">A 루트 ▶</a>
+            <a class="btn btn-ghost" href="https://youtu.be/2lgkiuSEzpI?t=149" target="_blank" rel="noopener">B 루트 ▶</a>
+          </div>
+        </header>
+        <div class="gallery" data-gallery>
+          <div class="g-main"><img class="g-img" src="img/gt/coop_laser.jpg" alt="협동원정대 레이저 기믹 전투"></div>
+          <div class="g-thumbs">
+            <button type="button" class="g-thumb" data-src="img/gt/coop_laser.jpg" aria-pressed="true" aria-label="레이저 기믹"><img src="img/gt/coop_laser.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/coop_map.jpg" aria-pressed="false" aria-label="분기 맵"><img src="img/gt/coop_map.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/coop_fight.jpg" aria-pressed="false" aria-label="A 루트 전투"><img src="img/gt/coop_fight.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/coop_a3.jpg" aria-pressed="false" aria-label="A-3 연속 전투"><img src="img/gt/coop_a3.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/coop_split.jpg" aria-pressed="false" aria-label="B-2 파티 분리"><img src="img/gt/coop_split.jpg" alt="" loading="lazy"></button>
           </div>
         </div>
       </article>
 
-      <article class="project">
-        <a class="media" href="white-crown.html"><img src="img/ue/u08_t375.jpg" alt="UE5로 재현한 하얀 왕관궁 대성당 내부" loading="lazy"><span class="tag">UE5 · 개인 프로젝트</span></a>
-        <div class="body">
-          <div class="chips"><span class="chip ue">UE5</span><span class="chip">PERSONAL</span><span class="chip">AI 활용</span></div>
-          <h3><a href="white-crown.html">원신 레벨 디자인 재해석<br>‘하얀 왕관궁’</a></h3>
-          <p class="sub">원신 7.0 스네즈나야 맵 레벨 디자인 재구성 · 2026.10.03 – 10.23 · 플레이 13분</p>
-          <p class="desc">원신 탐사 영상을 보고 레이아웃과 퍼즐 흐름을 UE5로 옮겼습니다. 얼음 성 입구부터 대성당, 옥상의 서리고룡까지 한 번에 이어지는 레벨입니다.</p>
-          <ul class="points">
-            <li>석상 회전 · 석상 밀기 · 온도 샹들리에 · 얼음↔물 컨버전 등 10여 개 기믹</li>
-            <li>컨트롤 회수 → 컷신 카메라 → 이벤트 → 복귀로 연출 흐름을 통일</li>
-            <li>레벨 설계는 직접, 제작 보조로 Claude(Opus 5.5)에 Unreal MCP · Blender MCP를 연결해 블루프린트와 블록아웃 메쉬를 구현</li>
-          </ul>
-          <div class="links">
-            <a class="btn btn-primary btn-sm" href="white-crown.html">자세히 보기</a>
-            <a class="btn btn-ghost btn-sm" href="white-crown.html#video">하이라이트 ▶</a>
+      <article class="pcard">
+        <header class="phead">
+          <div>
+            <span class="k">LIVE · 퍼즐 · 도전 스테이지</span>
+            <h3><a href="puzzle.html">번개의 길 · 빛의 미궁</a></h3>
+            <p>자석·전기 퍼즐을 튜토리얼 → 심화로 쌓은 메인 스토리 스테이지</p>
+          </div>
+          <div class="pbtns">
+            <a class="btn btn-primary" href="puzzle.html">자세히 보기 →</a>
+            <a class="btn btn-ghost" href="https://youtu.be/lLvoPTeWIsg?t=56" target="_blank" rel="noopener">영상 ▶</a>
+          </div>
+        </header>
+        <div class="gallery" data-gallery>
+          <div class="g-main"><img class="g-img" src="img/gt/w16_puzzle.jpg" alt="번개의 길 전기 퍼즐"></div>
+          <div class="g-thumbs">
+            <button type="button" class="g-thumb" data-src="img/gt/w16_puzzle.jpg" aria-pressed="true" aria-label="전기 퍼즐"><img src="img/gt/w16_puzzle.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/w16_map.jpg" aria-pressed="false" aria-label="스테이지 맵"><img src="img/gt/w16_map.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/w16_big.jpg" aria-pressed="false" aria-label="거대 자석"><img src="img/gt/w16_big.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/lab_play.jpg" aria-pressed="false" aria-label="빛의 미궁 42층"><img src="img/gt/lab_play.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/gt/lab_map.jpg" aria-pressed="false" aria-label="미궁 청사진"><img src="img/gt/lab_map.jpg" alt="" loading="lazy"></button>
           </div>
         </div>
       </article>
-    </div>
-  </section>
 
-  <section class="block" id="other">
-    <div class="wrap">
-      <div class="section-head">
-        <h2><span class="letter">D</span>그 외 담당 업무</h2>
-        <p>라이브 보스 개선, 리소스 컨셉, 이벤트 전투처럼 메인 프로젝트 사이사이에 맡은 일입니다.</p>
-      </div>
-      <div class="grid-cards">
-        <article class="card">
-          <div class="thumb"><img src="img/gt/raid.jpg" alt="길드 레이드 보스 전투 화면" loading="lazy"></div>
-          <div class="in">
-            <div class="chips"><span class="chip">LIVE 개선</span></div>
-            <h3>길드 레이드 보스 개선 · 유지보수</h3>
-            <p>랜덤 타겟과 기피 패턴, AI가 패턴을 피하지 않던 흐름도를 고치고, 까다로운 패턴엔 캔슬 시간을 줬습니다. 수정으로 생긴 사이드 이슈는 예외 처리와 추가 밸런싱으로 막았습니다. 피로도가 높던 레이드의 플레이 유저 수가 동 기간 대비 반등했습니다.</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb"><img src="img/gt/chibi.jpg" alt="가디언 테일즈 캐릭터 일러스트" loading="lazy"></div>
-          <div class="in">
-            <div class="chips"><span class="chip">CONCEPT</span></div>
-            <h3>타일셋 · 오브젝트 · 몬스터 컨셉 기획</h3>
-            <p>내러티브 설정을 바탕으로 레퍼런스를 모으고 아트 발주서를 작성했습니다. 화제가 된 밈 요소를 리소스에 넣어 커뮤니티 반응을 끌어낸 경험도 있습니다.</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb"><img src="img/gt/robot.jpg" alt="월드 18-6 진격의 헤븐홀드 로봇 대전 이벤트" loading="lazy"></div>
-          <div class="in">
-            <div class="chips"><span class="chip">EVENT 전투</span></div>
-            <h3>액티비티 이벤트 전투 · 진격의 헤븐홀드</h3>
-            <p>KOF·블레이블루 같은 대전 격투 게임을 참고해 거대 로봇의 무게감을 액션 딜레이로 살렸습니다. 격투 게임이 처음인 유저를 위해 패링 타이밍과 아이콘 연출을 따로 설계했습니다.</p>
-            <p class="meta"><a href="https://youtu.be/I0VQTRyJX6M?t=62" target="_blank" rel="noopener">영상 보기 ▶</a></p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb"><img src="img/gt/invader.jpg" alt="길드 레이드 보스 인베이더 테러리스트" loading="lazy"></div>
-          <div class="in">
-            <div class="chips"><span class="chip">EVENT 퀘스트</span></div>
-            <h3>패러디 이벤트 기획 · ‘5억 년 버튼’</h3>
-            <p>평소 즐겨 보던 커뮤니티 밈과 패러디 경험을 살려, 스테이지 안의 패러디 이벤트 퀘스트로 만화 ‘5억 년 버튼’을 옮겼습니다.</p>
-            <p class="meta"><a href="https://youtu.be/ohj1kieyTKw?t=263" target="_blank" rel="noopener">영상 보기 ▶</a></p>
-          </div>
-        </article>
+      <div class="minis" id="other">
+        <h3 class="h-sub">그 외 업무</h3>
+        <ul>
+          <li><b>길드 레이드 보스 개선</b><span>랜덤·기피 패턴과 AI 흐름도를 고쳐 플레이 유저 수 반등</span></li>
+          <li><b>리소스 컨셉 기획</b><span>타일셋·오브젝트·몬스터 컨셉과 아트 발주</span></li>
+          <li><b>액티비티 이벤트 전투</b><span>격투 게임식 패링을 넣은 거대 로봇 대전 <a href="https://youtu.be/I0VQTRyJX6M?t=62" target="_blank" rel="noopener">영상 ↗</a></span></li>
+          <li><b>패러디 이벤트</b><span>‘5억 년 버튼’ 패러디 퀘스트 <a href="https://youtu.be/ohj1kieyTKw?t=263" target="_blank" rel="noopener">영상 ↗</a></span></li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="block" id="videos">
     <div class="wrap">
-      <div class="section-head">
-        <h2>영상 모음</h2>
-        <p>클릭하면 새 창에서 YouTube가 열립니다. 시작 지점은 해당 구간에 맞춰 두었습니다.</p>
-      </div>
-      <div class="vlist">
+      <h2 class="h-sec">영상 · 문서</h2>
+      <div class="links-grid">
         <div>
-          <div class="vgroup">
-            <h3>보스</h3>
-            <a class="row" href="https://youtu.be/47w3uX0MQdg" target="_blank" rel="noopener">알베리히 · 월드 19 보스 전투 <small>YouTube ↗</small></a>
-            <a class="row" href="https://www.youtube.com/watch?v=Q-UDqbOAlcU" target="_blank" rel="noopener">선별자 흑선 · 협동원정대 시즌3 최종 보스 <small>YouTube ↗</small></a>
-          </div>
-          <div class="vgroup">
-            <h3>협동원정대 스테이지</h3>
-            <a class="row" href="https://youtu.be/aTNz4a2ON8o?t=14" target="_blank" rel="noopener">시즌 2 스테이지 <small>YouTube ↗</small></a>
-            <a class="row" href="https://youtu.be/JL7gAEUUPPI?t=10" target="_blank" rel="noopener">시즌 3.5 스테이지 <small>YouTube ↗</small></a>
-            <a class="row" href="https://youtu.be/2lgkiuSEzpI?t=1" target="_blank" rel="noopener">시즌 3.5 이름 없는 자 · A 루트 <small>YouTube ↗</small></a>
-            <a class="row" href="https://youtu.be/2lgkiuSEzpI?t=149" target="_blank" rel="noopener">시즌 3.5 이름 없는 자 · B 루트 <small>YouTube ↗</small></a>
-          </div>
+          <p class="grp">보스</p>
+          <a class="lrow" href="https://youtu.be/47w3uX0MQdg" target="_blank" rel="noopener">알베리히 보스 전투 ↗<small>YouTube</small></a>
+          <a class="lrow" href="https://www.youtube.com/watch?v=Q-UDqbOAlcU" target="_blank" rel="noopener">선별자 흑선 최종 보스 ↗<small>YouTube</small></a>
+          <p class="grp">스테이지 · 퍼즐</p>
+          <a class="lrow" href="https://youtu.be/2lgkiuSEzpI" target="_blank" rel="noopener">협동원정대 3.5 A 루트 ↗<small>YouTube</small></a>
+          <a class="lrow" href="https://youtu.be/2lgkiuSEzpI?t=149" target="_blank" rel="noopener">협동원정대 3.5 B 루트 ↗<small>YouTube</small></a>
+          <a class="lrow" href="https://youtu.be/aTNz4a2ON8o?t=14" target="_blank" rel="noopener">협동원정대 시즌 2 ↗<small>YouTube</small></a>
+          <a class="lrow" href="https://youtu.be/lLvoPTeWIsg?t=56" target="_blank" rel="noopener">월드 16 번개의 길 ↗<small>YouTube</small></a>
+          <a class="lrow" href="https://youtu.be/h5ONXRHFOeE" target="_blank" rel="noopener">빛속성 미궁 42층 ↗<small>YouTube</small></a>
         </div>
         <div>
-          <div class="vgroup">
-            <h3>퍼즐 · 도전</h3>
-            <a class="row" href="https://youtu.be/lLvoPTeWIsg?t=56" target="_blank" rel="noopener">월드 16 번개의 길 <small>YouTube ↗</small></a>
-            <a class="row" href="https://youtu.be/h5ONXRHFOeE" target="_blank" rel="noopener">빛속성 미궁 42층 <small>YouTube ↗</small></a>
-          </div>
-          <div class="vgroup">
-            <h3>이벤트</h3>
-            <a class="row" href="https://youtu.be/I0VQTRyJX6M?t=62" target="_blank" rel="noopener">월드 18-6 진격의 헤븐홀드 <small>YouTube ↗</small></a>
-            <a class="row" href="https://youtu.be/ohj1kieyTKw?t=263" target="_blank" rel="noopener">패러디 이벤트 ‘5억 년 버튼’ <small>YouTube ↗</small></a>
-          </div>
-          <div class="vgroup">
-            <h3>UE5 개인 프로젝트</h3>
-            <a class="row" href="white-crown.html#video">원신 레벨 디자인 재해석 · 하얀 왕관궁 하이라이트 <small>MP4 1:15</small></a>
-          </div>
+          <p class="grp">UE5 개인 프로젝트</p>
+          <a class="lrow" href="white-crown.html#video">하얀 왕관궁 하이라이트 (1:15)<small>MP4</small></a>
+          <p class="grp">이벤트</p>
+          <a class="lrow" href="https://youtu.be/I0VQTRyJX6M?t=62" target="_blank" rel="noopener">진격의 헤븐홀드 ↗<small>YouTube</small></a>
+          <a class="lrow" href="https://youtu.be/ohj1kieyTKw?t=263" target="_blank" rel="noopener">패러디 ‘5억 년 버튼’ ↗<small>YouTube</small></a>
+          <p class="grp">문서</p>
+          <a class="lrow" href="docs/portfolio.pdf" target="_blank" rel="noopener">가디언 테일즈 포트폴리오 (40쪽) ↗<small>PDF</small></a>
         </div>
       </div>
     </div>
   </section>
 
   <section class="block" id="about">
-    <div class="wrap">
-      <div class="section-head"><h2>About</h2></div>
-      <div class="about">
-        <div class="intro">
-          <h3>ABOUT</h3>
-          <p>디지털콘텐츠학과를 졸업하고 게임 기획 과정을 두 번 수료한 뒤, 베스파 킹스레이드 컨텐츠 팀에서 일을 시작했습니다.</p>
-          <p>이후 콩스튜디오 가디언 테일즈 레벨 디자인 팀에서 메인 스토리와 PVE 던전의 보스, 스테이지, 퍼즐을 기획하고 배치했습니다.</p>
-          <p>장르와 플랫폼을 가리지 않고 엔딩과 수집 100%를 목표로 플레이합니다. 플레이한 게임의 구조를 뜯어보는 습관이 기획의 재료가 됩니다.</p>
-
-          <h3 style="margin-top:36px">PLAY LOG</h3>
-          <ul class="playlog">
-            <li><b>원신</b><span>모험 레벨 60 · 전 월드 탐색 100% · 나선비경 12층, 환상극 10층 클리어 유지</span></li>
-            <li><b>명조 · 이환</b><span>월드 탐색 100%</span></li>
-            <li><b>로스트 아크</b><span>마수군단장 발칸 레이드</span></li>
-            <li><b>던전앤파이터</b><span>루크 ~ 프레이 레이드</span></li>
-            <li><b>몬스터 헌터</b><span>2G · 4G · 월드 · 와일즈 상위 랭크</span></li>
-            <li><b>젤다의 전설</b><span>시간의 오카리나 · 야생의 숨결 · 왕국의 눈물 등 7편 100%</span></li>
-            <li><b>파이어 엠블렘</b><span>10편 노멀 ~ 루나틱 클리어</span></li>
-            <li><b>MOBA · 격투</b><span>HOS 상위 10% · KOF, 스트리트 파이터, 블레이블루</span></li>
-          </ul>
-        </div>
-        <div>
-          <h3>CAREER</h3>
-          <ul class="timeline">
-            <li><span class="when">2022.07 – 2026.05</span><b>콩스튜디오 · 가디언 테일즈</b><span>레벨 디자인 팀 · 보스/몬스터 기획, 전투·퍼즐 스테이지 레벨 디자인</span></li>
-            <li><span class="when">2022.04 – 2022.06</span><b>베스파(VESPA) · 킹스레이드</b><span>컨텐츠 팀</span></li>
-          </ul>
-          <h3>EDUCATION</h3>
-          <ul class="timeline">
-            <li><span class="when">2021.04 – 2022.02</span><b>인하대학교 미래인재교육</b><span>게임 기획 수료</span></li>
-            <li><span class="when">2020.06 – 2021.01</span><b>SGA 서울 게임 아카데미</b><span>게임 기획 수료</span></li>
-            <li><span class="when">2014.03 – 2021.08</span><b>한신대학교</b><span>디지털콘텐츠학과 졸업</span></li>
-          </ul>
-          <h3>TOOLS</h3>
-          <div class="tools">
-            <span class="chip">Unity · Graph 툴</span><span class="chip">Unreal Engine 5</span><span class="chip">Tiled</span>
-            <span class="chip">Excel</span><span class="chip">Word</span><span class="chip">PowerPoint</span><span class="chip">Photoshop</span>
-            <span class="chip">Jira · Monday</span><span class="chip">Confluence</span><span class="chip">Slack</span>
-            <span class="chip">Gemini · Claude Code</span><span class="chip">Unreal MCP · Blender MCP</span>
-          </div>
+    <div class="wrap about">
+      <div>
+        <h3>ABOUT</h3>
+        <p class="intro">가디언 테일즈 레벨 디자인 팀에서 보스, 협동 던전, 퍼즐 스테이지를 기획하고 직접 배치했습니다.</p>
+        <p class="intro">외형 컨셉부터 패턴, 연출, 밸런싱까지 보스 한 마리를 끝까지 맡습니다.</p>
+      </div>
+      <div>
+        <h3>CAREER</h3>
+        <ul class="timeline">
+          <li><b>콩스튜디오 · 가디언 테일즈</b><span>레벨 디자인 팀 · 2022.07 – 2026.05</span></li>
+          <li><b>베스파 · 킹스레이드</b><span>컨텐츠 팀 · 2022.04 – 2022.06</span></li>
+          <li><b>한신대학교 디지털콘텐츠학과</b><span>졸업 · SGA·인하대 게임 기획 과정 수료</span></li>
+        </ul>
+        <h3>TOOLS</h3>
+        <div class="tools">
+          <span class="chip">Unity · Graph 툴</span><span class="chip">Unreal Engine 5</span><span class="chip">Tiled</span>
+          <span class="chip">Excel · PowerPoint</span><span class="chip">Photoshop</span><span class="chip">Jira · Confluence</span>
+          <span class="chip">Claude · Unreal MCP · Blender MCP</span>
         </div>
       </div>
     </div>
@@ -326,15 +230,15 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <h2>함께 일할 기회를 기다립니다</h2>
-    <p>전투·레벨 디자인 포지션에 대한 연락은 아래로 부탁드립니다.</p>
+    <h2>조현진 · 전투·레벨 디자이너</h2>
     <div class="contact">
       <div><span>mikuku01@gmail.com</span><button type="button" data-copy="mikuku01@gmail.com">복사</button></div>
       <div><span>010-9094-1619</span><button type="button" data-copy="010-9094-1619">복사</button></div>
     </div>
+    <p><a href="docs/portfolio.pdf" target="_blank" rel="noopener">포트폴리오 PDF ↗</a></p>
     <small>© 2026 조현진 · 게임 화면의 저작권은 각 게임사에 있습니다.</small>
   </div>
 </footer>
-<script src="app.js?v=20261025"></script>
+<script src="app.js?v=20261025b"></script>
 </body>
 </html>
