@@ -710,3 +710,12 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
 /* career: wider text column so each duty stays on one line */
 .job-main-grid { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px; }
 @media (max-width: 820px) { .job-main-grid { grid-template-columns: 1fr; } }
+
+/* slider used as a project card cover */
+.vp-card { min-width: 0; }
+.vp-card .vp-track { border-radius: 18px; box-shadow: none; }
+.vp-card .vp-slide img { aspect-ratio: 16 / 10; }
+.vp-card .vp-btn { width: 40px; height: 40px; font-size: 22px; top: calc(50% - 38px); }
+.vp-card .vp-prev { left: 12px; } .vp-card .vp-next { right: 12px; }
+.vp-card .vp-slide figcaption { font-size: 14px; padding: 30px 18px 12px; }
+.vp-card .vp-count { margin-top: 10px; font-size: 13px; }
