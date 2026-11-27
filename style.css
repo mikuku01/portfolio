@@ -729,3 +729,8 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
 .cover-banner img { object-position: center 78%; }
 .cover-banner { height: clamp(260px, 44vw, 460px); }
 .cover-banner img { object-position: center 72%; }
+
+/* larger orange labels */
+.pcard small { font-size: 14.5px; letter-spacing: .02em; margin-bottom: 8px; }
+.code { font-size: 14px; letter-spacing: .06em; }
+.eyebrow2 { font-size: 13.5px; }
