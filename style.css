@@ -665,3 +665,18 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
 
 /* career page: rules above and below the main employment record */
 .job:not(.job-prev) { max-width: none; padding: 48px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+/* career page: cover image banner with the page title on top */
+.cover-banner { position: relative; height: clamp(220px, 34vw, 340px); overflow: hidden; background: #0b1017; }
+.cover-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+.cover-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(8, 12, 20, .35), rgba(8, 12, 20, .6)); }
+.cover-text { position: absolute; inset: 0; z-index: 1; display: grid; place-content: center; text-align: center; color: #fff; }
+.cover-text p { margin: 0 0 6px; font-size: 12px; font-weight: 700; letter-spacing: .28em; }
+.cover-text h1 { margin: 0; font-size: clamp(40px, 7vw, 68px); font-weight: 800; letter-spacing: -.02em; text-shadow: 0 2px 18px rgba(0, 0, 0, .45); }
+.cover-banner + section.block { padding-top: 56px; }
+.cover-banner + section.block .job:not(.job-prev) { border-top: 0; padding-top: 0; }
+.cover-banner { height: clamp(240px, 38vw, 400px); }
+.cover-banner img { object-position: center 30%; }
+.cover-banner::after { background: linear-gradient(rgba(8, 12, 20, 0) 45%, rgba(8, 12, 20, .78)); }
+.cover-text { place-content: end start; text-align: left; padding: 0 max(20px, calc((100% - 1040px) / 2)) 26px; }
+.cover-text h1 { font-size: clamp(34px, 5vw, 52px); }
