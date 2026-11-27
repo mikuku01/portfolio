@@ -826,3 +826,8 @@ body::before { background: #0b0d12; }
 .cover-banner:not(.cover-level) .cover-text { z-index: 3; }
 
 .pd-concept { margin: 0; font-size: 16.5px; font-weight: 400; line-height: 1.7; color: var(--ink-2); }
+
+/* core play icons */
+.pd-tri > div { text-align: center; }
+.pd-tri p { text-align: left; }
+.pd-ico { display: block; margin: 0 auto 14px; width: 68px; height: 68px; padding: 14px; border-radius: 22px; background: var(--accent-soft); color: var(--accent); }
