@@ -778,3 +778,5 @@ body::before { background: #0b0d12; }
 .pd-yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .pd-label-sub { margin: 30px 0 12px; }
 .pd-concept { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.5; color: var(--ink); }
+
+.gallery .g-main [hidden] { display: none !important; }
