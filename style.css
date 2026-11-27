@@ -689,3 +689,5 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
 .job-prev-grid > * { min-width: 0; }
 .job-cover { width: 100%; max-width: 421px; height: auto; border-radius: 18px; box-shadow: var(--shadow); }
 @media (max-width: 820px) { .job-prev-grid { grid-template-columns: 1fr; gap: 28px; } }
+
+.job-cover { aspect-ratio: 16 / 9; object-fit: cover; }
