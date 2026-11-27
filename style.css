@@ -824,3 +824,5 @@ body::before { background: #0b0d12; }
 .cover-banner:not(.cover-level) img { position: relative; z-index: 1; object-fit: contain; object-position: center; }
 .cover-banner:not(.cover-level)::after { z-index: 2; background: linear-gradient(rgba(8, 12, 20, 0) 55%, rgba(8, 12, 20, .7)); }
 .cover-banner:not(.cover-level) .cover-text { z-index: 3; }
+
+.pd-concept { margin: 0; font-size: 16.5px; font-weight: 400; line-height: 1.7; color: var(--ink-2); }
