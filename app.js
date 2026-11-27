@@ -116,3 +116,33 @@
     if (now.textContent !== label) now.textContent = label;
   });
 })();
+
+// Image slider: arrows, keyboard and swipe move one image at a time.
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-slider]').forEach(function (box) {
+    var track = box.querySelector('.vp-track');
+    var slides = box.querySelectorAll('.vp-slide');
+    var prev = box.querySelector('.vp-prev'), next = box.querySelector('.vp-next');
+    var num = box.querySelector('.vp-count b');
+    function index() { return Math.round(track.scrollLeft / track.clientWidth); }
+    function go(i) {
+      i = Math.max(0, Math.min(slides.length - 1, i));
+      track.scrollTo({ left: i * track.clientWidth, behavior: reduce ? 'auto' : 'smooth' });
+    }
+    function sync() {
+      var i = index();
+      num.textContent = i + 1;
+      prev.disabled = i === 0; next.disabled = i === slides.length - 1;
+    }
+    prev.addEventListener('click', function () { go(index() - 1); });
+    next.addEventListener('click', function () { go(index() + 1); });
+    track.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); go(index() - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); go(index() + 1); }
+    });
+    track.addEventListener('scroll', function () { window.requestAnimationFrame(sync); });
+    window.addEventListener('resize', sync);
+    sync();
+  });
+})();
