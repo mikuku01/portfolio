@@ -680,3 +680,6 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
 .cover-banner::after { background: linear-gradient(rgba(8, 12, 20, 0) 45%, rgba(8, 12, 20, .78)); }
 .cover-text { place-content: end start; text-align: left; padding: 0 max(20px, calc((100% - 1040px) / 2)) 26px; }
 .cover-text h1 { font-size: clamp(34px, 5vw, 52px); }
+
+.job-title { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.job-title img { height: 44px; width: auto; border-radius: 8px; }
