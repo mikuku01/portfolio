@@ -146,3 +146,19 @@
     sync();
   });
 })();
+
+// Video poster: swap in the YouTube player when the poster is clicked.
+(function () {
+  document.querySelectorAll('.pd-yt[data-yt]').forEach(function (box) {
+    var btn = box.querySelector('.pd-yt-btn');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + box.getAttribute('data-yt') + '?autoplay=1';
+      f.title = btn.getAttribute('aria-label') || '';
+      f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+      f.allowFullscreen = true;
+      box.innerHTML = ''; box.appendChild(f);
+    });
+  });
+})();
