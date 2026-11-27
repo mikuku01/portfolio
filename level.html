@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>레벨 디자인 · 조현진 포트폴리오</title>
+<meta name="description" content="원신 ‘하얀 왕관궁’을 UE5에서 플레이 가능한 레벨로 재해석한 개인 프로젝트">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css?v=20261128a">
+</head>
+<body class="home">
+<a class="skip" href="#main">본문 바로가기</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>조현진</b><span>Level Designer</span></a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="level.html" aria-current="page">레벨 디자인</a>
+      <a href="career.html">경력</a>
+      <a href="about.html">자기 소개</a>
+      <a href="docs/portfolio.pdf" target="_blank" rel="noopener" class="navpdf">PDF ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="block" id="projects">
+    <div class="wrap">
+      <div class="sec-head page-head"><p class="code">LEVEL DESIGN</p><h1>레벨 디자인</h1><p class="page-lede">Unreal Engine 5로 직접 만든 개인 레벨 디자인 작업입니다.</p></div>
+
+      <article class="proj" id="p1">
+        <div class="gallery" data-gallery>
+          <div class="g-main">
+            <video class="g-video" muted loop playsinline preload="none" poster="img/ue/u17_t765.jpg" data-src="media/banner.mp4" aria-label="하얀 왕관궁 컷씬"></video>
+            <img class="g-img" alt="" hidden>
+          </div>
+          <div class="g-thumbs">
+            <button type="button" class="g-thumb" data-type="video" aria-pressed="true" aria-label="컷씬 영상"><img src="img/ue/u17_t765.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true">▶</span></button>
+            <button type="button" class="g-thumb" data-src="img/ue/u08_t375.jpg" aria-pressed="false" aria-label="대성당 내부"><img src="img/ue/u08_t375.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/ue/u02_t75.jpg" aria-pressed="false" aria-label="입구 광장 석상"><img src="img/ue/u02_t75.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/ue/u05_t165.jpg" aria-pressed="false" aria-label="얼음 물길 방"><img src="img/ue/u05_t165.jpg" alt="" loading="lazy"></button>
+            <button type="button" class="g-thumb" data-src="img/ue/u16_t735.jpg" aria-pressed="false" aria-label="서리고룡 보스전"><img src="img/ue/u16_t735.jpg" alt="" loading="lazy"></button>
+          </div>
+        </div>
+        <div class="proj-body">
+          <p class="code">P-01 · UE5 개인 프로젝트 · 2026.10.03 – 10.23</p>
+          <h3><a href="white-crown.html">원신 레벨 디자인 재해석 ‘하얀 왕관궁’</a></h3>
+          <p class="lede">원신 7.0의 얼음 성을 레이아웃·동선·퍼즐 단위로 분해해, 13분 동안 이어지는 UE5 레벨로 다시 쌓았습니다.</p>
+          <p class="pts-h">설계 포인트</p>
+          <ul class="pts">
+            <li>탐사 영상을 프레임 단위로 보며 공간 배치와 퍼즐이 열리는 순서를 정리</li>
+            <li>석상 회전·밀기, 온도 컨버전 등 10여 개 기믹을 다른 방에서도 쓰는 모듈로 설계</li>
+            <li>총괄 기획과 레벨 설계는 직접, 구현은 Claude(Opus 5.5) + Unreal·Blender MCP에 디렉팅하고 플레이 테스트로 검수</li>
+          </ul>
+          <div class="links">
+            <a class="btn btn-primary btn-sm" href="white-crown.html">상세 보기</a>
+            <a class="btn btn-ghost btn-sm" href="white-crown.html#video">하이라이트 ▶</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="code">CONTACT</p>
+      <div class="contact">
+        <div><span>mikuku01@gmail.com</span><button type="button" data-copy="mikuku01@gmail.com">복사</button></div>
+        <div><span>010-9094-1619</span><button type="button" data-copy="010-9094-1619">복사</button></div>
+      </div>
+    </div>
+    <small>© 2026 조현진 · 게임 화면의 저작권은 각 게임사에 있습니다.</small>
+  </div>
+</footer>
+<script src="app.js?v=20261025f"></script>
+</body>
+</html>
