@@ -704,3 +704,5 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
 /* about: profile without a picture */
 .profile-solo { grid-template-columns: 1fr; }
 .profile-solo .profile-text { margin-bottom: 0; max-width: 720px; }
+
+.profile-cta { margin: 28px 0 0; }
