@@ -772,3 +772,9 @@ body::before { background: #0b0d12; }
 
 .pcard .tags-sm { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
 .pcard .tags-sm .tg { display: inline-block; font-size: 13px; padding: 4px 11px; color: var(--ink-2); }
+
+/* project detail: embedded video and concept line */
+.pd-yt { position: relative; aspect-ratio: 16 / 9; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); background: #000; }
+.pd-yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pd-label-sub { margin: 30px 0 12px; }
+.pd-concept { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.5; color: var(--ink); }
