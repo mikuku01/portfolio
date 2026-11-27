@@ -734,3 +734,12 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
 .pcard small { font-size: 14.5px; letter-spacing: .02em; margin-bottom: 8px; }
 .code { font-size: 14px; letter-spacing: .06em; }
 .eyebrow2 { font-size: 13.5px; }
+
+/* black top bar */
+.site-header { background: rgba(11, 13, 18, .96); border-bottom: 0; }
+.brand b { color: #fff; }
+.nav a { color: rgba(255, 255, 255, .72); }
+.nav a:hover { color: #fff; }
+.nav a[aria-current="page"], .nav a.navpdf { color: #ff8a3d; }
+.brand span { color: #ff8a3d; }
+body::before { background: #0b0d12; }
