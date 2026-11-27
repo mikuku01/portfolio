@@ -769,3 +769,6 @@ body::before { background: #0b0d12; }
 .tg { display: inline-block; padding: 5px 13px; border-radius: 999px; font-size: 13.5px; font-weight: 700; background: var(--surface-2); color: var(--ink-2); }
 .tg-boss { background: var(--accent); color: #fff; }
 .tg-stage { background: var(--ink); color: #fff; }
+
+.pcard .tags-sm { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.pcard .tags-sm .tg { display: inline-block; font-size: 13px; padding: 4px 11px; color: var(--ink-2); }
