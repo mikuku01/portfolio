@@ -759,3 +759,5 @@ body::before { background: #0b0d12; }
 /* career: other work as image cards */
 .etc { margin-top: 48px; }
 .etc .code { margin-bottom: 16px; }
+
+.site-footer .foot2-note { margin: 10px 0 0; text-align: center; font-size: 12px; color: rgba(255, 255, 255, .38); }
