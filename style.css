@@ -752,7 +752,7 @@ body::before { background: #0b0d12; }
 .foot2-contact dt { color: rgba(255, 255, 255, .55); }
 .foot2-contact dd { color: #fff; }
 .site-footer .foot2-sign { color: rgba(255, 255, 255, .5); }
-.mk { background: var(--ink) !important; }
+.mk { background: var(--c); }
 .tag.ue { background: var(--accent-soft); color: var(--accent-ink); }
 ::selection { background: #ffd9c2; color: #14181f; }
 
