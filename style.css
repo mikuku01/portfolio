@@ -662,3 +662,6 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
 .vp-count { margin: 16px 0 0; text-align: center; color: var(--muted); font-size: 14px; letter-spacing: .08em; }
 .vp-count b { color: var(--ink); }
 @media (max-width: 640px) { .vp-btn { width: 40px; height: 40px; font-size: 22px; top: calc(50% - 36px); } .vp-prev { left: 10px; } .vp-next { right: 10px; } .vp-slide figcaption { font-size: 14px; padding: 30px 16px 12px; } }
+
+/* career page: rules above and below the main employment record */
+.job:not(.job-prev) { max-width: none; padding: 48px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
