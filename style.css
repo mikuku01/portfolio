@@ -743,3 +743,15 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
 .nav a[aria-current="page"], .nav a.navpdf { color: #ff8a3d; }
 .brand span { color: #ff8a3d; }
 body::before { background: #0b0d12; }
+
+/* colour pass: black, white and one orange */
+:root { --ink: #14181f; --ink-2: #4b5360; --muted: #8b929c; --line: #e9ebee; --surface-2: #f5f6f7; --ice: #14181f; --ice-soft: #eef0f2; --live: #14181f; --live-soft: #eef0f2; }
+.hero2 { background: linear-gradient(180deg, #f5f6f7 0%, #ffffff 100%); }
+.foot2 { background: #0b0d12; border-top: 0; }
+.site-footer .foot2-name { color: #fff; font-weight: 700; }
+.foot2-contact dt { color: rgba(255, 255, 255, .55); }
+.foot2-contact dd { color: #fff; }
+.site-footer .foot2-sign { color: rgba(255, 255, 255, .5); }
+.mk { background: var(--ink) !important; }
+.tag.ue { background: var(--accent-soft); color: var(--accent-ink); }
+::selection { background: #ffd9c2; color: #14181f; }
