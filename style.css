@@ -621,3 +621,7 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
   .pd-tri { grid-template-columns: 1fr; gap: 32px; }
   .pd-list div { grid-template-columns: 96px 1fr; }
 }
+
+.profile-say { margin-bottom: 16px; }
+.profile-text { margin: 0 0 24px; max-width: 620px; }
+.profile-text p { margin: 0 0 6px; color: var(--ink-2); font-size: 15.5px; }
