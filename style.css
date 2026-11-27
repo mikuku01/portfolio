@@ -573,3 +573,51 @@ body { background-image: none; background-color: var(--bg); line-height: 1.7; }
   .nav { gap: 14px; font-size: 13.5px; }
   .proj { padding: 14px; border-radius: 22px; }
 }
+
+/* About page: skills card */
+.skills { margin-top: 64px; background: var(--surface); border-radius: 28px; box-shadow: var(--shadow); padding: 40px 44px 12px; }
+.skills-sub { margin: 0 0 6px; font-size: 14px; color: var(--muted); }
+.skills h2 { margin: 0 0 8px; font-size: 30px; font-weight: 800; letter-spacing: -.03em; }
+.skill { padding: 34px 0; border-top: 1px solid var(--line); }
+.skill:first-of-type { border-top: 0; }
+.skill h3 { margin: 0 0 10px; font-size: 18px; font-weight: 800; letter-spacing: -.01em; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.skill p, .skill ul { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+.skill ul { padding-left: 20px; display: grid; gap: 4px; }
+.mk { display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 5px; border-radius: 7px; background: var(--c); color: #fff; font-style: normal; font-size: 12px; font-weight: 800; letter-spacing: 0; }
+.skill h3 .mk:first-of-type { margin-left: 4px; }
+@media (max-width: 820px) { .skills { padding: 28px 22px 4px; border-radius: 22px; } }
+
+/* Project detail: movie first, info + overview, synopsis, core play, view points */
+.pd-head { padding: 64px 0 8px; }
+.pd-back { display: inline-block; margin-bottom: 28px; font-size: 14px; font-weight: 600; color: var(--muted); text-decoration: none; }
+.pd-back:hover { color: var(--accent); }
+.pd-head h1 { font-size: clamp(30px, 4.6vw, 46px); font-weight: 800; letter-spacing: -.035em; line-height: 1.2; margin: 0; }
+.pd-sec { padding: 56px 0; border-top: 1px solid var(--line); }
+.pd-head + .pd-sec { border-top: 0; padding-top: 40px; }
+.pd-label { margin: 0 0 26px; font-size: 12px; font-weight: 700; letter-spacing: .28em; color: var(--muted); }
+.pd-movie video { width: 100%; border-radius: 24px; border: 0; box-shadow: var(--shadow); background: #000; }
+.pd-two { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; }
+.pd-two > * { min-width: 0; }
+.pd-list { margin: 0; display: grid; gap: 18px; }
+.pd-list div { display: grid; grid-template-columns: 120px 1fr; gap: 16px; }
+.pd-list dt { color: var(--muted); font-weight: 700; }
+.pd-list dd { margin: 0; font-weight: 500; }
+.pd-text { margin: 0 0 12px; color: var(--ink-2); font-size: 16.5px; }
+.pd-syn { text-align: center; }
+.pd-syn h2 { margin: 0 0 22px; font-size: 22px; font-weight: 800; color: var(--accent); }
+.pd-syn p { max-width: 720px; margin: 0 auto 12px; color: var(--ink-2); font-size: 16.5px; }
+.pd-tri { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+.pd-tri > div { min-width: 0; }
+.pd-tri h3 { margin: 0 0 14px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-size: 20px; font-weight: 800; color: var(--accent); text-align: center; }
+.pd-tri p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+.pd-figs { margin-top: 0; }
+.pd-more details { border: 1px solid var(--line); border-radius: 18px; padding: 0 24px; margin-bottom: 14px; }
+.pd-more summary { cursor: pointer; padding: 20px 0; font-weight: 800; font-size: 17px; }
+.pd-more details[open] { padding-bottom: 24px; }
+.pd-more details .label { margin-top: 18px; }
+.pd-more.case { padding-block: 56px; }
+@media (max-width: 820px) {
+  .pd-two { grid-template-columns: 1fr; gap: 44px; }
+  .pd-tri { grid-template-columns: 1fr; gap: 32px; }
+  .pd-list div { grid-template-columns: 96px 1fr; }
+}

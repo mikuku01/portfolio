@@ -6,7 +6,7 @@
 <title>원신 레벨 디자인 재해석 · 하얀 왕관궁 · 조현진 포트폴리오</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-<link rel="stylesheet" href="style.css?v=20261128c">
+<link rel="stylesheet" href="style.css?v=20261128e">
 </head>
 <body>
 <a class="skip" href="#main">본문 바로가기</a>
@@ -22,60 +22,74 @@
   </div>
 </header>
 <main id="main">
-  <section class="case-hero">
-    <video class="hero-video" src="media/banner.mp4" poster="media/banner.jpg" autoplay muted loop playsinline preload="auto" aria-label="하얀 왕관궁 컷씬: 석상 퍼즐 해제, 대성당 샹들리에, 서리고룡 등장"></video>
-    <div class="cap"><div class="wrap">
-      <a class="back" href="level.html">← 레벨 디자인</a>
-      <p class="eyebrow" style="color:#cfe6ff">Portfolio · 원신 맵 레벨 디자인 재구성</p>
-      <h1>원신 레벨 디자인 재해석<br>‘하얀 왕관궁’</h1>
-      <p>얼어붙은 왕좌의 성을 한 칸씩 다시 쌓았습니다. 원신 7.0 스네즈나야의 ‘하얀 왕관궁’을 레이아웃·동선·퍼즐 단위로 분해하고, Unreal Engine에서 플레이 가능한 레벨로 재구성했습니다.</p>
-    </div></div>
-  </section>
-  <dl class="metastrip">
-    <div><dt>작업 일자</dt><dd>2026.10.03 – 10.23 (3주)</dd></div>
-    <div><dt>엔진</dt><dd>Unreal Engine 5</dd></div>
-    <div><dt>역할</dt><dd>총괄 기획 · 레벨 설계 · 검수</dd></div>
-    <div><dt>구현 디렉팅</dt><dd>Claude Opus 5.5 · Unreal / Blender MCP</dd></div>
-  </dl>
   <div class="wrap">
-    <div class="case">
-      <section id="video">
-        <p class="label">HIGHLIGHT</p>
-        <h2>13분 플레이를 75초로</h2>
-        <figure>
-          <video controls preload="metadata" playsinline poster="media/poster.jpg">
-            <source src="media/highlight.mp4" type="video/mp4">
-          </video>
-          <figcaption>하이라이트 · 설원 진입 → 얼음 길막 → 석상 퍼즐 → 대성당 → 승강기 → 옥상 보스 서리고룡</figcaption>
-        </figure>
-      </section>
+    <header class="pd-head">
+      <a class="pd-back" href="level.html">← 레벨 디자인</a>
+      <p class="eyebrow2">UE5 개인 프로젝트</p>
+      <h1>원신 ‘하얀 왕관궁’ 분석 및 역기획</h1>
+    </header>
 
-      <section>
-        <p class="label">GOAL</p>
-        <h2>잘 만든 맵을 그대로 옮겨 보며 배우기</h2>
-        <div class="text">
-          <p>원신의 탐사 영상을 프레임 단위로 보며 공간 배치, 동선, 퍼즐이 어떤 순서로 열리는지 정리했습니다. 남쪽 입구의 계단식 광장에서 시작해 십자형 대성당, 북쪽 설원 정원, 동쪽 고리 다리를 지나 옥상까지 올라가는 구조를 블록아웃 메쉬로 거의 그대로 재현했습니다.</p>
-          <p>원작에 있는 퍼즐 기믹은 동작 방식을 관찰해서 만들고, 원작에 없는 부분은 이 성에 어울리게 새로 설계했습니다. 마지막 옥상에는 성을 점령한 최종 보스 ‘서리고룡’을 넣었습니다.</p>
-        </div>
-      </section>
+    <section class="pd-sec" id="video">
+      <p class="pd-label">GAMEPLAY MOVIE</p>
+      <figure class="pd-movie">
+        <video controls preload="metadata" playsinline poster="media/poster.jpg">
+          <source src="media/highlight.mp4" type="video/mp4">
+        </video>
+      </figure>
+    </section>
 
-      <section>
-        <p class="label">FLOW</p>
-        <h2>플레이 흐름</h2>
-        <div class="figs">
-          <figure><img src="img/ue/u01_t15.jpg" alt="설원 진입" loading="lazy" data-zoom><figcaption>1 · 설원과 얼음 결정 숲으로 진입</figcaption></figure>
-          <figure><img src="img/ue/u02_t75.jpg" alt="거대한 얼음이 막아선 광장" loading="lazy" data-zoom><figcaption>2 · “거대한 얼음이 막아서고 있다” 길막</figcaption></figure>
-          <figure><img src="img/ue/u04_t135.jpg" alt="석상 기믹" loading="lazy" data-zoom><figcaption>3 · 석상을 돌리고 밀어 얼음을 해제</figcaption></figure>
-          <figure><img src="img/ue/u05_t165.jpg" alt="얼음 물길 방" loading="lazy" data-zoom><figcaption>4 · 얼음 바닥과 물길이 있는 방</figcaption></figure>
-          <figure><img src="img/ue/u08_t375.jpg" alt="대성당 내부" loading="lazy" data-zoom><figcaption>5 · 온도에 따라 바뀌는 대성당</figcaption></figure>
-          <figure><img src="img/ue/u14_t645.jpg" alt="승강기" loading="lazy" data-zoom><figcaption>6 · 승강기로 상층부 이동</figcaption></figure>
-          <figure><img src="img/ue/u15_t675.jpg" alt="옥상으로 가는 계단" loading="lazy" data-zoom><figcaption>7 · 옥상으로 오르는 대계단</figcaption></figure>
-          <figure><img src="img/ue/u16_t735.jpg" alt="서리고룡 보스" loading="lazy" data-zoom><figcaption>8 · 옥상 보스 ‘서리고룡’</figcaption></figure>
-          <figure><img src="img/ue/u17_t765.jpg" alt="서리고룡 비행" loading="lazy" data-zoom><figcaption>9 · 성 위를 나는 서리고룡</figcaption></figure>
-        </div>
-      </section>
+    <section class="pd-sec pd-two">
+      <div>
+        <p class="pd-label">PROJECT INFORMATION</p>
+        <dl class="pd-list">
+          <div><dt>장르</dt><dd>3인칭 오픈월드 RPG</dd></div>
+          <div><dt>엔진</dt><dd>Unreal Engine 5.8</dd></div>
+          <div><dt>맵 사이즈</dt><dd>1000(m) x 1000(m)</dd></div>
+          <div><dt>플레이타임</dt><dd>15분</dd></div>
+          <div><dt>제작 기간</dt><dd>3주 (2026.10.03 ~ 10.23)</dd></div>
+          <div><dt>레퍼런스</dt><dd>세키로 / 원신</dd></div>
+        </dl>
+      </div>
+      <div>
+        <p class="pd-label">OVERVIEW</p>
+        <p class="pd-text">원신 스네즈나야 지역의 월드 퀘스트 ‘하얀 차르’의 배경인 ‘하얀 왕관궁’을 일부 변형해 만든 레벨 디자인 역기획입니다.</p>
+        <p class="pd-text">언리얼 엔진으로 핵심 기믹과 동선을 직접 구현하고 재설계했습니다.</p>
+      </div>
+    </section>
 
-      <section>
+    <section class="pd-sec pd-syn">
+      <h2>시놉시스</h2>
+      <p>하얀 왕관궁은 한때 번영했던 신성 왕국의 궁전이다. 왕국의 수호자이자 상징이던 신성룡은 긴 잠에서 깨어나 멸망한 왕국을 마주하고, 그 현실을 받아들이지 못한 채 서리고룡으로 타락한다.</p>
+      <p>플레이어는 모험가로서 하얀 왕관궁에 들어가, 망령이 된 서리고룡을 쓰러뜨려야 한다.</p>
+    </section>
+
+    <section class="pd-sec">
+      <p class="pd-label">CORE PLAY</p>
+      <div class="pd-tri">
+        <div><h3>로프 액션</h3><p>탐험 도구인 로프를 맵 곳곳의 액션 포인트에 걸어 이동한다.</p></div>
+        <div><h3>탐색과 퍼즐</h3><p>상호작용 오브젝트와 단서를 찾아가며 플레이어가 공간을 학습하도록 유도한다. 익힌 규칙은 다음 방에서 더 어려운 형태로 다시 쓰인다.</p></div>
+        <div><h3>이벤트 연출</h3><p>연출, 이벤트, 조명으로 플레이어의 긴장감을 조절하고 플레이 흐름의 몰입도를 높인다.</p></div>
+      </div>
+    </section>
+
+    <section class="pd-sec">
+      <p class="pd-label">VIEW POINTS</p>
+      <div class="figs pd-figs">
+        <figure><img src="img/ue/u01_t15.jpg" alt="설원 진입" loading="lazy" data-zoom><figcaption>설원과 얼음 결정 숲</figcaption></figure>
+        <figure><img src="img/ue/u02_t75.jpg" alt="거대한 얼음이 막아선 광장" loading="lazy" data-zoom><figcaption>얼음이 막아선 광장</figcaption></figure>
+        <figure><img src="img/ue/u04_t135.jpg" alt="석상 기믹" loading="lazy" data-zoom><figcaption>석상 퍼즐</figcaption></figure>
+        <figure><img src="img/ue/u05_t165.jpg" alt="얼음 물길 방" loading="lazy" data-zoom><figcaption>얼음 바닥과 물길</figcaption></figure>
+        <figure><img src="img/ue/u08_t375.jpg" alt="대성당 내부" loading="lazy" data-zoom><figcaption>대성당</figcaption></figure>
+        <figure><img src="img/ue/u12_t555.jpg" alt="빛나는 바닥 기믹 방" loading="lazy" data-zoom><figcaption>빛 타일 바닥</figcaption></figure>
+        <figure><img src="img/ue/u14_t645.jpg" alt="승강기" loading="lazy" data-zoom><figcaption>승강기</figcaption></figure>
+        <figure><img src="img/ue/u15_t675.jpg" alt="옥상으로 가는 계단" loading="lazy" data-zoom><figcaption>옥상 대계단</figcaption></figure>
+        <figure><img src="img/ue/u16_t735.jpg" alt="서리고룡 보스" loading="lazy" data-zoom><figcaption>옥상 보스 ‘서리고룡’</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="pd-sec pd-more case">
+      <details>
+        <summary>기믹 10종 상세</summary>
         <p class="label">GIMMICKS</p>
         <h2>직접 설계한 기믹</h2>
         <div class="tablewrap">
@@ -92,9 +106,6 @@
             <tr><th>지역명 · 늑대 AI</th><td>구역에 들어서면 원신처럼 지역명이 화면 위쪽에 떠오릅니다. 늑대는 어슬렁거리다 플레이어를 보면 달려오고, 투사체 3발에 쓰러집니다.</td></tr>
           </table>
         </div>
-      </section>
-
-      <section>
         <p class="label">DESIGN POINT</p>
         <h2>다른 방에서도 다시 쓰는 기믹</h2>
         <div class="keys">
@@ -102,9 +113,9 @@
           <div class="key"><p class="label">컨버전</p><h3>상태에 따라 생기고 사라진다</h3><p>냉방·난방 상태에 따라 오브젝트가 제거되고 생성되는 구조를 한 번 만들어, 다음 방의 메인 기믹으로 그대로 확장했습니다.</p></div>
           <div class="key"><p class="label">연출</p><h3>같은 리듬의 이벤트</h3><p>퍼즐을 풀면 컨트롤 회수 → 컷신 카메라 → 이벤트 → 페이드 후 복귀가 같은 리듬으로 흘러, 보상 순간을 또렷하게 했습니다.</p></div>
         </div>
-      </section>
-
-      <section>
+      </details>
+      <details>
+        <summary>제작 방식 (기획 총괄 · AI 디렉팅)</summary>
         <p class="label">총괄 기획 · AI 디렉팅</p>
         <h2>기획은 직접 총괄하고, 구현은 AI를 디렉팅해 검수했습니다</h2>
         <dl class="dl" style="margin-bottom:22px">
@@ -119,13 +130,9 @@
           <p>이 레벨의 방향과 규칙은 모두 제가 정했습니다. 어떤 방에서 무엇을 가르치고, 어떤 기믹으로 다음 공간을 열지, 어느 순간에 컷씬을 넣을지까지 기획한 뒤, 블루프린트와 블록아웃 메쉬 구현을 Claude(Opus 5.5)에 Unreal MCP·Blender MCP로 디렉팅했습니다.</p>
           <p>요구 사항은 “올라가는 중에도 이동 가능하게”(승강기), “우클릭 홀드로 조준하면 UI, 좌클릭으로 이동”(로프 앵커)처럼 플레이 감각 단위로 전달했습니다. 결과는 매번 직접 플레이해 검수하고, 손맛이 맞을 때까지 수치를 조정했습니다. 기획자 한 명이 3주 만에 13분짜리 레벨을 끝까지 완성할 수 있었던 방식입니다.</p>
         </div>
-        <div class="figs">
-          <figure><img src="img/ue/u12_t555.jpg" alt="빛나는 바닥 기믹 방" loading="lazy" data-zoom><figcaption>빛 타일 바닥 구간</figcaption></figure>
-          <figure><img src="img/ue/u13_t615.jpg" alt="작동 스위치" loading="lazy" data-zoom><figcaption>“작동” 스위치 장치</figcaption></figure>
-          <figure><img src="img/ue/u11_t525.jpg" alt="얼음 결정 벽" loading="lazy" data-zoom><figcaption>얼음 결정 지형</figcaption></figure>
-        </div>
-      </section>
-    </div>
+      </details>
+    </section>
+
     <nav class="pager" aria-label="프로젝트 이동">
       <a href="puzzle.html"><small>PREV</small>← 번개의 길 · 빛의 미궁</a>
       <a href="level.html" style="text-align:right"><small>BACK</small>레벨 디자인 →</a>
