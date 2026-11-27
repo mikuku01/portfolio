@@ -755,3 +755,7 @@ body::before { background: #0b0d12; }
 .mk { background: var(--ink) !important; }
 .tag.ue { background: var(--accent-soft); color: var(--accent-ink); }
 ::selection { background: #ffd9c2; color: #14181f; }
+
+/* career: other work as image cards */
+.etc { margin-top: 48px; }
+.etc .code { margin-bottom: 16px; }
